@@ -17,11 +17,13 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build si push cu tag unic
+- name: Build si push cu tag unic
+        shell: cmd
         run: |
           docker build -t vtacic/site-vasile:${{ github.sha }} .
           docker push vtacic/site-vasile:${{ github.sha }}
 
       - name: Actualizeaza Kubernetes
+        shell: cmd
         run: |
           kubectl set image deployment/site-deployment site=vtacic/site-vasile:${{ github.sha }}
