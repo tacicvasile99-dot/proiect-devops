@@ -1,12 +1,12 @@
-name: Build si push imagine Docker
+name: Build si deploy pe Kubernetes
 
 on:
   push:
     branches: [ main ]
 
 jobs:
-  build-and-push:
-    runs-on: ubuntu-latest
+  build-and-deploy:
+    runs-on: self-hosted
     steps:
       - name: Descarca codul
         uses: actions/checkout@v4
@@ -17,9 +17,11 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build si push
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          push: true
-          tags: vtacic/site-vasile:latest
+      - name: Build si push cu tag unic
+        run: |
+          docker build -t vtacic/site-vasile:${{ github.sha }} .
+          docker push vtacic/site-vasile:${{ github.sha }}
+
+      - name: Actualizeaza Kubernetes
+        run: |
+          kubectl set image deployment/site-deployment site=vtacic/site-vasile:${{ github.sha }}
