@@ -1,17 +1,187 @@
-<h1>Lista neagra</h1>
-  <h1>1. Razor</h1>
-  <h1>2. Bull</h1>
-  <h3>3. Ronny</h3>
-  <h4>4. J.Vega</h4>
-  <h5>5. Beawer</h5>
-  <h1>End List for Today 26.07.2026</h1>
-  
-  
-  Interesant ce va iesi acum
-  
-  
-  <h1>asta deja e Kuberbates</h1>
-  
-  
-  <h1>S-a primit in sfirsti !</h1>
-   <h1>Bem BEREEEEEE!!!!!</h1>
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MURA — Ultimul Zid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Barlow+Condensed:wght@300;400;500;600&family=Space+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <div class="nav__mark">
+      <span class="nav__crest">◇</span>
+      <span class="nav__name">MURA</span>
+    </div>
+    <nav class="nav__links">
+      <a href="#zid">Zidul</a>
+      <a href="#legiune">Legiunea</a>
+      <a href="#juramant">Jurământul</a>
+    </nav>
+    <a href="#juramant" class="nav__cta">Înrolează-te</a>
+  </header>
+
+  <!-- HERO: scara umană strivită de zid -->
+  <section class="hero">
+    <div class="hero__sky" aria-hidden="true"></div>
+
+    <!-- Zidul construit din cod -->
+    <div class="wall" aria-hidden="true">
+      <div class="wall__face"></div>
+      <div class="wall__top"></div>
+    </div>
+
+    <!-- silueta minusculă la baza zidului -->
+    <div class="scale" aria-hidden="true">
+      <div class="scale__figure"></div>
+    </div>
+
+    <div class="hero__copy">
+      <p class="eyebrow">Anul 850 · în spatele Zidului Maria</p>
+      <h1 class="hero__title">
+        <span class="hero__line line-1">O sută de ani</span>
+        <span class="hero__line line-2">de liniște.</span>
+        <span class="hero__line line-3">Și apoi <em>umbra</em>.</span>
+      </h1>
+      <p class="hero__lede">
+        Omenirea trăiește în trei inele de piatră, ferită de ceva ce nu a mai
+        văzut de generații. Astăzi pământul se cutremură. Cineva trebuie să urce
+        pe zid — și să privească dincolo.
+      </p>
+      <div class="hero__actions">
+        <a href="#juramant" class="btn btn--primary">Urcă pe zid</a>
+        <a href="#zid" class="btn btn--ghost">Ce e afară?</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>coboară</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS: scara amenințării, în stil registru militar -->
+  <section class="ledger">
+    <div class="ledger__row">
+      <div class="ledger__item">
+        <span class="ledger__num" data-count="60">60</span>
+        <span class="ledger__unit">metri</span>
+        <span class="ledger__label">înălțimea zidului</span>
+      </div>
+      <div class="ledger__item">
+        <span class="ledger__num" data-count="100">100</span>
+        <span class="ledger__unit">ani</span>
+        <span class="ledger__label">fără o singură breșă</span>
+      </div>
+      <div class="ledger__item">
+        <span class="ledger__num" data-count="3">3</span>
+        <span class="ledger__unit">ziduri</span>
+        <span class="ledger__label">Maria · Rose · Sina</span>
+      </div>
+      <div class="ledger__item">
+        <span class="ledger__num ledger__num--alarm" data-count="0">0</span>
+        <span class="ledger__unit">min.</span>
+        <span class="ledger__label">până când s-a schimbat totul</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZID: secțiunea despre lumea din spatele zidului -->
+  <section class="dossier" id="zid">
+    <div class="dossier__head">
+      <span class="tag">Dosar · clasificat</span>
+      <h2 class="dossier__title">Ce se află dincolo de piatră</h2>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card__mark">I</div>
+        <h3>Gigantii</h3>
+        <p>
+          Siluete fără rațiune, mai înalte decât casele. Nu mănâncă din foame.
+          Se îndreaptă spre ziduri de parcă ar fi chemate. Nimeni nu știe de ce.
+        </p>
+      </article>
+      <article class="card">
+        <div class="card__mark">II</div>
+        <h3>Manevrajul vertical</h3>
+        <p>
+          Cabluri, lame și gaz comprimat. Singura armă a omenirii nu e forța —
+          e viteza. Cine stăpânește aerul dintre acoperișuri, supraviețuiește.
+        </p>
+      </article>
+      <article class="card">
+        <div class="card__mark">III</div>
+        <h3>Ceafa</h3>
+        <p>
+          Un singur punct vulnerabil, cât un pumn de om, la baza cefei. O tăietură
+          precisă la un metru adâncime. Ratarea nu îți dă a doua șansă.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- BREȘA: momentul de tensiune, banda roșie -->
+  <section class="breach" id="legiune">
+    <div class="breach__inner">
+      <p class="breach__kicker">Alarma răsună în Shiganshina</p>
+      <h2 class="breach__title">Zidul a fost spart.</h2>
+      <p class="breach__text">
+        Nu prin escaladare. Nu prin asediu. Ceva a lovit poarta dintr-o singură
+        mișcare și a deschis inelul exterior. Legiunea de Recunoaștere pleacă în
+        afara zidurilor — știind că cei mai mulți nu se vor întoarce.
+      </p>
+      <div class="breach__crest">
+        <span class="wings wings--left"></span>
+        <span class="breach__crest-label">Aripile Libertății</span>
+        <span class="wings wings--right"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- JURĂMÂNT: call to action final -->
+  <section class="oath" id="juramant">
+    <div class="oath__inner">
+      <p class="eyebrow eyebrow--center">Ceremonia de înrolare</p>
+      <h2 class="oath__title">Închină-ți inima.</h2>
+      <p class="oath__text">
+        Trei destine te așteaptă. Garnizoana apără zidurile. Poliția Militară
+        servește în interior. Legiunea de Recunoaștere pleacă dincolo. Alege unde
+        îți pui viața.
+      </p>
+
+      <form class="oath__form" onsubmit="return false;">
+        <div class="oath__field">
+          <label for="nume">Numele recrutului</label>
+          <input id="nume" type="text" placeholder="Cum vei fi strigat pe câmp" />
+        </div>
+        <div class="oath__field">
+          <label for="ramura">Ramura</label>
+          <select id="ramura">
+            <option>Legiunea de Recunoaștere</option>
+            <option>Garnizoana</option>
+            <option>Poliția Militară</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Depune jurământul</button>
+      </form>
+      <p class="oath__note" id="oathNote" hidden>Jurământul a fost înregistrat. Nu privi înapoi.</p>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="foot__crest">◇ MURA</div>
+    <p class="foot__line">Un tribut fan · construit din cod, fără imagini din serial.</p>
+    <p class="foot__small">Proiect demonstrativ pentru pipeline DevOps.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
